@@ -16,5 +16,16 @@ func handleRequest() {
 }
 
 func main() {
+	test := add(5, 6)
+	b := square(5)
+	fmt.Println(test, b)
 	handleRequest()
+}
+
+func add(a int, b int) int {
+	return a + b + 2
+}
+
+func square(a int) int {
+	return a * a
 }
