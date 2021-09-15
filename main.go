@@ -29,3 +29,6 @@ func add(a int, b int) int {
 func square(a int) int {
 	return a * a
 }
+func squareV2(a int, b int) int {
+	return a*a + b*b
+}
