@@ -1,8 +1,8 @@
-package main
+package example
 
 import "net/http"
 
-func main() {
+func mainQuery() {
 	http.HandleFunc("/search", search)
 	http.ListenAndServe(":8082", nil)
 }

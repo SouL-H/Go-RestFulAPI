@@ -1,4 +1,4 @@
-package main
+package example
 
 import (
 	"net/http"
@@ -14,7 +14,7 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(x))
 
 }
-func main() {
+func mainHandler() {
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/index", indexHandler)
 	http.HandleFunc("/about", aboutHandler)
