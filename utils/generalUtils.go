@@ -3,6 +3,6 @@ package utils
 
 func CheckError(err error){
 	if err != nil {
-		err.Error()
+		panic(err)
 	}
 }
